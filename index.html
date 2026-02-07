@@ -7,5 +7,33 @@
 </head>
 <body>
     <h1>CGPA Calculator</h1>
+    <label for="subjectcount">Number of Subject: </label>
+    <input type="number" id = "subjectcount" name="subjectcount" placeholder="Enter number of Subject">
+    <br>
+    <br>
+    <button type = "button">Add Subjects</button>
+    <br>
+    <br>
+    <section id="subject-row">
+        <label for="subname">Subject Name: </label>
+        <input type="text" id="subname" name="subname" placeholder="Enter Subject Name">
+        <br>
+        <br>
+        <label for="subcredt">Credit Points: </label>
+        <input type="text" id="subcredit" name="subcredit" placeholder="Enter Credit Points">
+        <br>
+        <br>
+        <label for="subgrade">Grade: </label>
+        <select name="subgrade" id="subgrade">
+            <option value="" disabled selected>Select Grade</option>
+            <option value="O">O</option>
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="RA">RA</option>
+        </select>
+    </section>
 </body>
 </html>
