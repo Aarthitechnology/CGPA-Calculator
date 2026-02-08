@@ -28,3 +28,54 @@ addbutton.addEventListener("click",function() {
         `;
     }
 });
+let calculatebutton = document.getElementById("calculate");
+let result = document.querySelector("#result p b");
+calculatebutton.addEventListener("click" , function() {
+    let totalcredits=0;
+    let totalpoints=0;
+    let creditInput = subjectcontainer.querySelectorAll("input[type='number']");
+    let gradeselect = subjectcontainer.querySelectorAll("select");
+    for(let i=0;i<creditInput.length;i++)
+    {
+        let credit = Number(creditInput[i].value);
+        let grade = gradeselect[i].value;
+        if(credit===0 || grade==="")
+        {
+            alert("Please fill all credits and grades");
+            return;
+        }
+        let gradepoint=0;
+        if(grade==="O")
+        {
+            gradepoint=10;
+        }
+        else if(grade==="A+")
+        {
+            gradepoint = 9;
+        }
+        else if(grade==="A")
+        {
+            gradepoint = 8;
+        }
+        else if(grade==="B+")
+        {
+            gradepoint = 7;
+        }
+        else if(grade==="B")
+        {
+            gradepoint = 6;
+        }
+        else if(grade==="C")
+        {
+            gradepoint = 5;
+        }
+        else
+        {
+            gradepoint = 0;
+        }
+        totalcredits+=credit;
+        totalpoints+=credit*gradepoint;
+    } 
+    let cgpa = totalpoints/totalcredits;
+    result.textContent = cgpa.toFixed(2);
+});
