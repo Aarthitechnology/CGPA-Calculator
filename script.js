@@ -8,10 +8,10 @@ addbutton.addEventListener("click",function() {
     {
         subjectcontainer.innerHTML += `<h4>Subject ${i}</h4>
         <label>Subject Name:</label>
-            <input type="text" placeholder="Enter Subject Name"><br><br>
+            <input type="text" placeholder="Enter Subject Name"><br>
 
             <label>Credit Points:</label>
-            <input type="number" placeholder="Enter Credit Points"><br><br>
+            <input type="number" placeholder="Enter Credit Points"><br>
 
             <label>Grade:</label>
             <select>

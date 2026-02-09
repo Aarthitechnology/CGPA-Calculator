@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>CGPA Calculator</title>
 </head>
 <body>
-    <h1>CGPA Calculator</h1>
-    <label for="subjectcount">Number of Subject: </label>
-    <input type="number" id = "subjectcount" name="subjectcount" placeholder="Enter number of Subject">
-    <br>
-    <br>
-    <button type = "button" id="add">Add Subjects</button>
-    <br>
-    <br>
-    <section id="subject-row"></section>
-    <button type="button" id="calculate">Calculate CGPA</button>
-    <div id="result">
-        <h4>Your CGPA is</h4>
-        <p><b></b></p>
+    <div class="container">
+        <h1>CGPA Calculator</h1>
+        <label for="subjectcount"><b>Number of Subject: </b></label>
+        <input type="number" id = "subjectcount" name="subjectcount" placeholder="Enter number of Subject">
+        <br>
+        <br>
+        <button type = "button" id="add">Add Subjects</button>
+        <br>
+        <br>
+        <section id="subject-row"></section>
+        <button type="button" id="calculate">Calculate CGPA</button>
+        <div id="result">
+            <h4>Your CGPA is</h4>
+            <p><b></b></p>
+        </div>
+        <script src="script.js"></script>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>

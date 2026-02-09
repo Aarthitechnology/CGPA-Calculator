@@ -1,0 +1,120 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page background */
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+/* Main container */
+.container {
+    width: 100%;
+    max-width: 600px;
+    min-height: 450px;
+
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(10px);
+
+    padding: 28px;
+    border-radius: 12px;
+    margin: 0 auto;
+
+    color: #374151;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Inputs & dropdowns with opacity */
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 12px;
+
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+
+    color: #1f2937;
+    outline: none;
+}
+
+/* Input focus */
+input:focus,
+select:focus {
+    background: rgba(255, 255, 255, 0.9);
+    border-color: #a78bfa;
+}
+
+/* Placeholder */
+input::placeholder {
+    color: #6b7280;
+}
+
+/* Buttons (same pastel color) */
+button {
+    width: 60%;
+    padding: 11px 14px;        /* ↑ height */
+    font-size: 14.5px;         /* ↑ text size */
+    font-weight: 600;
+
+    background-color: #c4b5fd;
+    color: #1f2937;
+
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+
+    display: block;
+    margin: 4px auto;          /* ↓ reduced gap */
+
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+
+
+
+button:hover {
+    background-color: #a78bfa;
+    transform: scale(0.98);
+}
+
+
+/* Result section */
+#result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#result p b {
+    font-size: 24px;
+    color: #111827;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    .container {
+        padding: 18px;
+        min-height: auto;
+    }
+}
