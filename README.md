@@ -9,4 +9,4 @@ A responsive CGPA Calculator built using HTML, CSS, and JavaScript.
 - Soft pastel design
 
 ## Live Demo
-https://USERNAME.github.io/CGPA-Calculator/
+[https://USERNAME.github.io/CGPA-Calculator/](https://aarthitechnology.github.io/CGPA-Calculator/)
